@@ -15,8 +15,8 @@ class EmployeeService: IEmployeeService {
     
     func getEmployees(_ closure: ([EmployeeModel])->()) {
         closure([.init(avatar: nil, name: "Алина Биккинина", position: "iOS разработчик"),
-                 .init(avatar: nil, name: "Илья Моторин", position: "java разработчик"),
-                 .init(avatar: nil, name: "Конь Пальтов", position: "кто")])
+                 .init(avatar: nil, name: "Семён Петров", position: "java разработчик"),
+                 .init(avatar: nil, name: "Лазарь Семёнов", position: "Уборщик")])
     }
 }
 

@@ -7,7 +7,11 @@ protocol IMenuService {
 class MenuService: IMenuService {
     func getMenu(closure: ([MenuModel])->()) {
         closure([.init(food: "Морковь вареная", components: "Морковь, соль, сахар"),
-                 .init(image: UIImage(systemName: "birthday.cake.fill"), food: "Торт денрожденный", components: "Любовь, мука, яйца, шоколад")])
+                 .init(image: UIImage(systemName: "birthday.cake.fill"), food: "Торт на день рождения", components: "Любовь, мука, яйца, шоколад"),
+                 .init(food: "Пицца заяц", components: "Морковь, мука пшеничная, пророщенная фасоль"),
+                 .init(food: "Салат Наполено", components: "Помидорры чери, куриная грудка, пармезан, бегет, салат айсберг, соус цезарь"),
+                 .init(image: UIImage(systemName: "cup.and.saucer"),food: "Капуччино", components: "Молоко, молочная пена, еспрессо"),
+                 .init(image: UIImage(systemName: "mug.fill"), food: "Кола", components: "Кола добрый, лёд")])
     }
 }
 

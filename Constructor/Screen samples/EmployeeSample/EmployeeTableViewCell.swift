@@ -14,7 +14,11 @@ struct EmployeeModel {
 
 class EmployeeCell: UITableViewCell {
     
-    private lazy var avatarImageView = UIImageView(image: .init(systemName: "person.fill"))
+    private lazy var avatarImageView: UIImageView = {
+        let iv = UIImageView(image: .init(systemName: "person.fill"))
+        iv.tintColor = .employeeColor
+        return iv
+    }()
     
     private lazy var nameLabel = {
         let label = UILabel()
@@ -72,7 +76,9 @@ class EmployeeCell: UITableViewCell {
     }
     
     func setContent(model: EmployeeModel) {
-        if let image = model.avatar { avatarImageView.image = image }
+        if let image = model.avatar {
+            avatarImageView.image = image
+        }
         nameLabel.text = model.name
         positionLabel.text = model.position
     }

@@ -17,13 +17,17 @@ private enum Constraints: ConstraintInsetTarget {
 }
 
 enum Samples {
+    case instruction
     case menuSample
     case employeSample
+    case newsSample
 }
 
 protocol IChangePresenter {
+    func instructionButtonPressed()
     func menuButtonPressed()
     func employeeButtonPressed()
+    func newsButtonPressed()
 }
 
 class ChangeSampleViewController: UIViewController {
@@ -35,13 +39,23 @@ class ChangeSampleViewController: UIViewController {
         return vv
     }()
     
+    private lazy var instructionSampleButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Инструкция", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 15
+        button.backgroundColor = .instructionColor
+        return button
+    }()
+    
     private lazy var menuSampleButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Шаблон меню", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 15
-        button.backgroundColor = .red
+        button.backgroundColor = .menuColor
         return button
     }()
     
@@ -51,13 +65,37 @@ class ChangeSampleViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 15
-        button.backgroundColor = .blue
+        button.backgroundColor = .employeeColor
         return button
     }()
+    
+    private lazy var newsSampleButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Шаблон новостной ленты", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 15
+        button.backgroundColor = .newsColor
+        return button
+    }()
+    
+    private lazy var companySampleButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Шаблон страницы компании", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.layer.masksToBounds = true
+        button.layer.cornerRadius = 15
+        button.backgroundColor = .companyColor
+        return button
+    }()
+    
+    private lazy var instructionGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showInstructionSample(_:)))
     
     private lazy var menuGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showMenuSample(_:)))
     
     private lazy var employeeGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showEmployeeSample(_:)))
+    
+    private lazy var newsGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showNewsSample(_:)))
     
     var presenter: IChangePresenter
     
@@ -83,7 +121,7 @@ extension ChangeSampleViewController {
         self.view.backgroundColor = .white
         self.view.addSubview(verticalView)
         
-        [menuSampleButton, employeeSampleButton].forEach({$0.snp.makeConstraints { make in
+        [instructionSampleButton, menuSampleButton, employeeSampleButton, newsSampleButton, companySampleButton].forEach({$0.snp.makeConstraints { make in
             make.height.equalTo(Constraints.buttonHeight)
         }})
         
@@ -96,20 +134,32 @@ extension ChangeSampleViewController {
                 .inset(Constraints.buttonsTop)
         }
         
-        [menuSampleButton, employeeSampleButton].forEach({verticalView.addArrangedSubview($0)})
+        [instructionSampleButton, menuSampleButton, employeeSampleButton, newsSampleButton, companySampleButton].forEach({verticalView.addArrangedSubview($0)})
         
+        
+        instructionSampleButton.addGestureRecognizer(instructionGestureRecognizer)
         menuSampleButton.addGestureRecognizer(menuGestureRecognizer)
         employeeSampleButton.addGestureRecognizer(employeeGestureRecognizer)
+        newsSampleButton.addGestureRecognizer(newsGestureRecognizer)
     }
     
 }
 
 extension ChangeSampleViewController {
+    
+    @objc func showInstructionSample(_ sender:UITapGestureRecognizer) {
+        presenter.instructionButtonPressed()
+    }
+    
     @objc func showMenuSample(_ sender:UITapGestureRecognizer) {
         presenter.menuButtonPressed()
     }
     
     @objc func showEmployeeSample(_ sender:UITapGestureRecognizer) {
         presenter.employeeButtonPressed()
+    }
+    
+    @objc func showNewsSample(_ sender:UITapGestureRecognizer) {
+        presenter.newsButtonPressed()
     }
 }

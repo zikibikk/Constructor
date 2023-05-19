@@ -8,4 +8,4 @@
 import UIKit
 
 protocol NewsInput: UIViewController { func show(newsModels: [NewsModel]) }
-protocol NewsOutput { func viewWillAppear() }
+protocol NewsOutput: ViewOutput { func viewWillAppear() }

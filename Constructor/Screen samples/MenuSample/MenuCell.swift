@@ -8,7 +8,11 @@ struct MenuModel {
 
 class MenuCell: UITableViewCell {
     
-    private lazy var foodImageView = UIImageView(image: UIImage(systemName: "carrot.fill"))
+    private lazy var foodImageView: UIImageView = {
+        let iv = UIImageView(image: UIImage(systemName: "carrot.fill"))
+        iv.tintColor = .systemOrange
+        return iv
+    }()
     
     private lazy var foodLabel = {
         let label = UILabel()
@@ -34,6 +38,9 @@ class MenuCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+extension MenuCell {
     
     private func setUpView() {
         
@@ -67,7 +74,10 @@ class MenuCell: UITableViewCell {
     }
     
     func setContent(model: MenuModel) {
-        if let image = model.image { foodImageView.image = image}
+        if let image = model.image {
+            foodImageView.image = image
+            foodImageView.tintColor = .newsColor
+        }
         foodLabel.text = model.food
         componentsLabel.text = model.components
     }

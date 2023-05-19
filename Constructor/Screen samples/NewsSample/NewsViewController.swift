@@ -20,6 +20,7 @@ class NewsViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "\(UITableViewCell.self)")
         tableView.register(NewsCell.self, forCellReuseIdentifier: "\(NewsCell.self)")
+        tableView.register(NewsWithImageCell.self, forCellReuseIdentifier: "\(NewsWithImageCell.self)")
         return tableView
     }()
     
@@ -49,9 +50,16 @@ extension NewsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(NewsCell.self)", for: indexPath) as! NewsCell
-        cell.setContent(model: newsModels[indexPath.row])
-        return cell
+        let currentModel = newsModels[indexPath.row]
+        if currentModel.image != nil {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "\(NewsWithImageCell.self)", for: indexPath) as! NewsWithImageCell
+            cell.setContent(model: newsModels[indexPath.row])
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "\(NewsCell.self)", for: indexPath) as! NewsCell
+            cell.setContent(model: newsModels[indexPath.row])
+            return cell
+        }
     }
 }
 

@@ -20,36 +20,11 @@ class MyTabBar: UITabBarController {
     
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if(item === previousItem) {
-            let modalController = ChangeSampleViewController(presenter: self)
+            let changePresenter = ChangePresenter()
+            changePresenter.viewController = (selectedViewController as! ChangableViewInput)
+            let modalController = ChangeSampleViewController(presenter: changePresenter)
             selectedViewController?.present(modalController, animated: true)
         } else { previousItem = item }
     }
 }
 
-extension MyTabBar: IChangePresenter {
-    func menuButtonPressed() {
-        guard let controller = selectedViewController as? ChangableViewController else { return }
-        
-        let menuService: IMenuService = MenuService()
-        let menuPresenter = MenuPresenter(menuService: menuService)
-        menuPresenter.menuViewController = controller
-        
-        controller.presenter = menuPresenter
-        menuPresenter.viewWillAppear()
-        controller.dismiss(animated: true)
-    }
-    
-    func employeeButtonPressed() {
-        guard let controller = selectedViewController as? ChangableViewController else { return }
-        
-        let employeeService: IEmployeeService = EmployeeService()
-        let employeePresenter = EmployeePresenter(employeeService: employeeService)
-        employeePresenter.employeeViewController = controller
-        
-        controller.presenter = employeePresenter
-        employeePresenter.viewWillAppear()
-        controller.dismiss(animated: true)
-    }
-    
-    
-}

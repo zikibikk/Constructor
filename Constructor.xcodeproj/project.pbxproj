@@ -7,44 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C870F032A15502D0010ECA7 /* MenuAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F022A15502D0010ECA7 /* MenuAssembly.swift */; };
-		7C870F062A1558DA0010ECA7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F052A1558DA0010ECA7 /* NewsViewController.swift */; };
 		7C870F082A1566070010ECA7 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F072A1566070010ECA7 /* NewsPresenter.swift */; };
 		7C870F0A2A1568C50010ECA7 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F092A1568C50010ECA7 /* NewsCell.swift */; };
 		7C870F0C2A1568F80010ECA7 /* NewsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F0B2A1568F80010ECA7 /* NewsModule.swift */; };
 		7C870F102A157A5B0010ECA7 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F0F2A157A5B0010ECA7 /* MyTabBar.swift */; };
 		7C870F132A15914E0010ECA7 /* ChangeSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F122A15914E0010ECA7 /* ChangeSampleViewController.swift */; };
-		7C870F162A16374E0010ECA7 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F152A16374E0010ECA7 /* Fonts.swift */; };
 		7C870F1A2A1651780010ECA7 /* ChangableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F192A1651780010ECA7 /* ChangableViewController.swift */; };
+		7C870F202A16C7060010ECA7 /* InstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F1F2A16C7060010ECA7 /* InstructionCell.swift */; };
+		7C870F222A16E6DC0010ECA7 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F212A16E6DC0010ECA7 /* ColorExtensions.swift */; };
+		7C870F242A17D52D0010ECA7 /* ChangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C870F232A17D52D0010ECA7 /* ChangePresenter.swift */; };
 		7CBA914E2A10F3CE0075230D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA914D2A10F3CE0075230D /* AppDelegate.swift */; };
 		7CBA91502A10F3CE0075230D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA914F2A10F3CE0075230D /* SceneDelegate.swift */; };
 		7CBA91522A10F3CE0075230D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91512A10F3CE0075230D /* ViewController.swift */; };
 		7CBA91552A10F3CE0075230D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBA91532A10F3CE0075230D /* Main.storyboard */; };
 		7CBA91572A10F3D00075230D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBA91562A10F3D00075230D /* Assets.xcassets */; };
 		7CBA915A2A10F3D00075230D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBA91582A10F3D00075230D /* LaunchScreen.storyboard */; };
-		7CBA91682A10F9C60075230D /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91672A10F9C60075230D /* EmployeesViewController.swift */; };
 		7CBA916A2A1102F80075230D /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91692A1102F80075230D /* EmployeeTableViewCell.swift */; };
 		7CBA916E2A1103670075230D /* EmployeeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA916D2A1103670075230D /* EmployeeModule.swift */; };
 		7CBA91772A13D7670075230D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7CBA91762A13D7670075230D /* SnapKit */; };
 		7CBA91792A1408930075230D /* EmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91782A1408930075230D /* EmployeePresenter.swift */; };
-		7CBA917B2A140C990075230D /* EmployeeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA917A2A140C990075230D /* EmployeeAssembly.swift */; };
 		7CBA917E2A1417C40075230D /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA917D2A1417C40075230D /* CompanyViewController.swift */; };
-		7CBA91822A14225F0075230D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91812A14225F0075230D /* MenuViewController.swift */; };
 		7CBA91842A1423F30075230D /* MenuModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91832A1423F30075230D /* MenuModule.swift */; };
 		7CBA91862A14273B0075230D /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91852A14273B0075230D /* MenuPresenter.swift */; };
 		7CBA91882A1429010075230D /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA91872A1429010075230D /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C870F022A15502D0010ECA7 /* MenuAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAssembly.swift; sourceTree = "<group>"; };
-		7C870F052A1558DA0010ECA7 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		7C870F072A1566070010ECA7 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
 		7C870F092A1568C50010ECA7 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		7C870F0B2A1568F80010ECA7 /* NewsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModule.swift; sourceTree = "<group>"; };
 		7C870F0F2A157A5B0010ECA7 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		7C870F122A15914E0010ECA7 /* ChangeSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSampleViewController.swift; sourceTree = "<group>"; };
-		7C870F152A16374E0010ECA7 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		7C870F192A1651780010ECA7 /* ChangableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangableViewController.swift; sourceTree = "<group>"; };
+		7C870F1F2A16C7060010ECA7 /* InstructionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionCell.swift; sourceTree = "<group>"; };
+		7C870F212A16E6DC0010ECA7 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		7C870F232A17D52D0010ECA7 /* ChangePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePresenter.swift; sourceTree = "<group>"; };
 		7CBA914A2A10F3CE0075230D /* Constructor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Constructor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CBA914D2A10F3CE0075230D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CBA914F2A10F3CE0075230D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,13 +50,10 @@
 		7CBA91562A10F3D00075230D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CBA91592A10F3D00075230D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CBA915B2A10F3D00075230D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CBA91672A10F9C60075230D /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		7CBA91692A1102F80075230D /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		7CBA916D2A1103670075230D /* EmployeeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModule.swift; sourceTree = "<group>"; };
 		7CBA91782A1408930075230D /* EmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeePresenter.swift; sourceTree = "<group>"; };
-		7CBA917A2A140C990075230D /* EmployeeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeAssembly.swift; sourceTree = "<group>"; };
 		7CBA917D2A1417C40075230D /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
-		7CBA91812A14225F0075230D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7CBA91832A1423F30075230D /* MenuModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModule.swift; sourceTree = "<group>"; };
 		7CBA91852A14273B0075230D /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		7CBA91872A1429010075230D /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
@@ -80,7 +74,6 @@
 		7C870F042A1558C10010ECA7 /* NewsSample */ = {
 			isa = PBXGroup;
 			children = (
-				7C870F052A1558DA0010ECA7 /* NewsViewController.swift */,
 				7C870F072A1566070010ECA7 /* NewsPresenter.swift */,
 				7C870F092A1568C50010ECA7 /* NewsCell.swift */,
 				7C870F0B2A1568F80010ECA7 /* NewsModule.swift */,
@@ -101,6 +94,7 @@
 			children = (
 				7C870F122A15914E0010ECA7 /* ChangeSampleViewController.swift */,
 				7C870F192A1651780010ECA7 /* ChangableViewController.swift */,
+				7C870F232A17D52D0010ECA7 /* ChangePresenter.swift */,
 			);
 			path = ChangeSample;
 			sourceTree = "<group>";
@@ -108,9 +102,17 @@
 		7C870F142A16373C0010ECA7 /* DesignSettings */ = {
 			isa = PBXGroup;
 			children = (
-				7C870F152A16374E0010ECA7 /* Fonts.swift */,
+				7C870F212A16E6DC0010ECA7 /* ColorExtensions.swift */,
 			);
 			path = DesignSettings;
+			sourceTree = "<group>";
+		};
+		7C870F1E2A16C6E10010ECA7 /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				7C870F1F2A16C7060010ECA7 /* InstructionCell.swift */,
+			);
+			path = Instruction;
 			sourceTree = "<group>";
 		};
 		7CBA91412A10F3CE0075230D = {
@@ -132,6 +134,7 @@
 		7CBA914C2A10F3CE0075230D /* Constructor */ = {
 			isa = PBXGroup;
 			children = (
+				7C870F1E2A16C6E10010ECA7 /* Instruction */,
 				7C870F142A16373C0010ECA7 /* DesignSettings */,
 				7C870F112A1591210010ECA7 /* ChangeSample */,
 				7C870F0E2A157A2E0010ECA7 /* Navigation */,
@@ -161,11 +164,9 @@
 		7CBA91662A10F9A90075230D /* EmployeeSample */ = {
 			isa = PBXGroup;
 			children = (
-				7CBA91672A10F9C60075230D /* EmployeesViewController.swift */,
 				7CBA91692A1102F80075230D /* EmployeeTableViewCell.swift */,
 				7CBA916D2A1103670075230D /* EmployeeModule.swift */,
 				7CBA91782A1408930075230D /* EmployeePresenter.swift */,
-				7CBA917A2A140C990075230D /* EmployeeAssembly.swift */,
 			);
 			path = EmployeeSample;
 			sourceTree = "<group>";
@@ -181,11 +182,9 @@
 		7CBA91802A1422320075230D /* MenuSample */ = {
 			isa = PBXGroup;
 			children = (
-				7CBA91812A14225F0075230D /* MenuViewController.swift */,
 				7CBA91832A1423F30075230D /* MenuModule.swift */,
 				7CBA91852A14273B0075230D /* MenuPresenter.swift */,
 				7CBA91872A1429010075230D /* MenuCell.swift */,
-				7C870F022A15502D0010ECA7 /* MenuAssembly.swift */,
 			);
 			path = MenuSample;
 			sourceTree = "<group>";
@@ -269,18 +268,15 @@
 			files = (
 				7C870F102A157A5B0010ECA7 /* MyTabBar.swift in Sources */,
 				7CBA91792A1408930075230D /* EmployeePresenter.swift in Sources */,
-				7CBA91822A14225F0075230D /* MenuViewController.swift in Sources */,
-				7CBA917B2A140C990075230D /* EmployeeAssembly.swift in Sources */,
 				7C870F132A15914E0010ECA7 /* ChangeSampleViewController.swift in Sources */,
 				7C870F082A1566070010ECA7 /* NewsPresenter.swift in Sources */,
-				7C870F062A1558DA0010ECA7 /* NewsViewController.swift in Sources */,
-				7C870F162A16374E0010ECA7 /* Fonts.swift in Sources */,
+				7C870F202A16C7060010ECA7 /* InstructionCell.swift in Sources */,
+				7C870F222A16E6DC0010ECA7 /* ColorExtensions.swift in Sources */,
 				7CBA91522A10F3CE0075230D /* ViewController.swift in Sources */,
 				7CBA914E2A10F3CE0075230D /* AppDelegate.swift in Sources */,
 				7C870F1A2A1651780010ECA7 /* ChangableViewController.swift in Sources */,
-				7CBA91682A10F9C60075230D /* EmployeesViewController.swift in Sources */,
-				7C870F032A15502D0010ECA7 /* MenuAssembly.swift in Sources */,
 				7CBA917E2A1417C40075230D /* CompanyViewController.swift in Sources */,
+				7C870F242A17D52D0010ECA7 /* ChangePresenter.swift in Sources */,
 				7CBA91842A1423F30075230D /* MenuModule.swift in Sources */,
 				7CBA916E2A1103670075230D /* EmployeeModule.swift in Sources */,
 				7C870F0C2A1568F80010ECA7 /* NewsModule.swift in Sources */,
